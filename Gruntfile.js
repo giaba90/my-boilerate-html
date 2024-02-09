@@ -4,12 +4,20 @@ module.exports = function (grunt) {
 
         sass: {
             dist: {
+                options: {
+                    style: 'compressed',
+                    compass: false,
+                    'no-source-map': true
+                },
                 files: {
                     'assets/css/style.css': 'css/style.scss'
                 }
             }
         },
         watch: {
+            options: {
+                livereload: true
+            },
             css: {
                 files: '**/*.scss',
                 tasks: ['sass']
