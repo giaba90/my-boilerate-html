@@ -1,0 +1,29 @@
+{
+  "name": "my-boilerate-html",
+  "version": "1.0.0",
+  "description": "Piccolo boilerate in html a scopo di test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/giaba90/my-boilerate-html.git"
+  },
+  "keywords": [
+    "html",
+    "git"
+  ],
+  "author": "Gianluca Barranca",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/giaba90/my-boilerate-html/issues"
+  },
+  "homepage": "https://github.com/giaba90/my-boilerate-html#readme",
+  "dependencies": {
+    "grunt": "^1.6.1",
+    "grunt-cli": "^1.4.3",
+    "grunt-contrib-sass": "^2.0.0",
+    "grunt-contrib-watch": "^1.1.0"
+  }
+}
