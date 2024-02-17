@@ -14,6 +14,11 @@ module.exports = function (grunt) {
                 }
             }
         },
+        jshint: {
+            files: {
+                src: ['my-boilerate-html/**/*.js']
+            }
+        },
         watch: {
             options: {
                 livereload: true
@@ -25,6 +30,7 @@ module.exports = function (grunt) {
         }
     });
     grunt.loadNpmTasks('grunt-contrib-sass');
+    grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.registerTask('dev', ['sass', 'watch']);
+    grunt.registerTask('dev', ['sass', 'jshint', 'watch']);
 }
