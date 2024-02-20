@@ -19,6 +19,13 @@ module.exports = function (grunt) {
                 src: ['my-boilerate-html/**/*.js']
             }
         },
+        uglify: {
+            my_target: {
+                files: {
+                    'assets/js/index.min.js': ['js/script.js']
+                }
+            }
+        },
         watch: {
             options: {
                 livereload: true
@@ -31,6 +38,7 @@ module.exports = function (grunt) {
     });
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-jshint');
+    grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.registerTask('dev', ['sass', 'jshint', 'watch']);
+    grunt.registerTask('dev', ['sass', 'jshint', 'uglify', 'watch']);
 }
