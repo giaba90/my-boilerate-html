@@ -1,6 +1,6 @@
 # My boilerate HTML/CSS
 
-This repo help me to resume all things that i've studied in past 2 weeks.
+This repo help me to resume all things that i've learn in this years
 
 - First install node js and git in your pc.
 - After creating a github repository and cloning in your desktop dir, install npm.
